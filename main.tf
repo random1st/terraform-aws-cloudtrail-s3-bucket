@@ -14,7 +14,7 @@ data "aws_iam_policy_document" "default" {
 
     principals {
       type        = "Service"
-      identifiers = ["cloudtrail.amazonaws.com"]
+      identifiers = ["cloudtrail.amazonaws.com", "logs.us-east-1.amazonaws.com"]
     }
 
     actions = [
@@ -31,7 +31,7 @@ data "aws_iam_policy_document" "default" {
 
     principals {
       type        = "Service"
-      identifiers = ["config.amazonaws.com", "cloudtrail.amazonaws.com"]
+      identifiers = ["config.amazonaws.com", "cloudtrail.amazonaws.com", "logs.us-east-1.amazonaws.com"]
     }
 
     actions = [
